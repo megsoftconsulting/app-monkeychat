@@ -60,9 +60,9 @@ namespace MonkeyChat.iOS
                     }
                 });
             }
-            catch
+            catch(Exception ex)
             {
-
+                
                 return false;
             }
 
