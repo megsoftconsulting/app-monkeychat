@@ -16,7 +16,9 @@ namespace MonkeyChat
             var id = CrossDeviceInfo.Current.Id;
 
             //var tokenEndpoint = $"https://xamarinchat.azurewebsites.net/token?device={id}";
-            var tokenEndpoint = $"http://megsoft-ci.eastus2.cloudapp.azure.com/token?device={id}";
+            //http://twilioipmessaging20161208041349.azurewebsites.net/
+            var tokenEndpoint = $"http://twilioipmessaging20161208041349.azurewebsites.net/token?device={id}";
+            //var tokenEndpoint = $"http://megsoft-ci.eastus2.cloudapp.azure.com/token?device={id}";
 
             var http = new HttpClient();
             var data = await http.GetStringAsync(tokenEndpoint);
